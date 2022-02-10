@@ -1,5 +1,5 @@
 {% set name = "tiffslide" %}
-{% set version = "0.3.0" %}
+{% set version = "1.0.0" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: db464fb12ae3fe18660eb9b236674b69f1bde43675b25a8ef8e89e5e7d05981f
+  sha256: 41d55447b0369c1dd47b5d65a43384fb80f60f593fc1fa3bfeffac407438cb08
 
 build:
-  number: 1
-  skip: true   # [py<37]
+  number: 0
+  skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
