@@ -1,5 +1,5 @@
 {% set name = "tiffslide" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0ff10796576f2119ba6f94dc2758cc0d858d554038eb79fee026668d712d8668
+  sha256: 67ba14a35ffceb196d614009c74f02ff02582809406ded003414dd487a61ec59
 
 build:
   number: 0
@@ -29,7 +29,8 @@ requirements:
     - python
     - tifffile >=2020.9.22
     - typing-extensions  # [py<38]
-    - zarr
+    - zarr  # [py>37]
+    - zarr <2.11.0  # [py<38]
 
 test:
   imports:
