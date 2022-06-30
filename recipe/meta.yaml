@@ -28,7 +28,7 @@ requirements:
     - pillow
     - python
     - tifffile >=2020.9.22
-    - typing-extensions  # [py<38]
+    - typing-extensions  # [py<310]
     - zarr  # [py>37]
     - zarr <2.11.0  # [py<38]
 
