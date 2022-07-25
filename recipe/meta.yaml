@@ -21,13 +21,13 @@ requirements:
     - python
   host:
     - pip
-    - python
+    - python >=3.7
     - setuptools-scm
   run:
     - fsspec
     - imagecodecs
     - pillow
-    - python
+    - python >=3.7
     - tifffile >=2020.9.22
     - typing-extensions >=4.0
     - zarr
