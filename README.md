@@ -1,11 +1,11 @@
-About tiffslide
-===============
+About tiffslide-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tiffslide-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/bayer-science-for-a-better-life/tiffslide
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tiffslide-feedstock/blob/main/LICENSE.txt)
 
 Summary: A drop-in replacement for openslide-python.
 
