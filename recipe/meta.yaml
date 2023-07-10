@@ -1,5 +1,5 @@
 {% set name = "tiffslide" %}
-{% set version = "2.1.2" %}
+{% set version = "2.2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 77195ed9b0a86744577f1e294ebdc3ceb08ec9ecbddc0acbd66501beae0bbe54
+  sha256: ed45d46167df75013cd042697213b0667e17639def0ea3ae3b798f8fdd1b5a15
 
 build:
   noarch: python
@@ -18,16 +18,16 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - setuptools-scm
   run:
     - fsspec !=2022.11.0,!=2023.1.0
     - imagecodecs
     - pillow
-    - python >=3.7
+    - python >=3.8
     - tifffile >=2021.6.14
     - typing-extensions >=4.0
-    - zarr
+    - zarr >=2.11.0
 
 test:
   imports:
