@@ -1,5 +1,5 @@
 {% set name = "tiffslide" %}
-{% set version = "2.2.0.post1" %}
+{% set version = "2.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 988f87dd221097d786acfa5f107a27c942a9581948566755fd82bdb5e0ec6c0c
+  sha256: df85aab1d3d7622c495520e036a6662c0428b35d7cc790571f909a24c9295fb1
 
 build:
   noarch: python
