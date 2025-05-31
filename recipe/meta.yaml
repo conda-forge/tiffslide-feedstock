@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -26,7 +26,7 @@ requirements:
     - imagecodecs
     - pillow >=9.1.0
     - python >={{ python_min }}
-    - tifffile >=2023.7.4
+    - tifffile >=2023.7.4,,<2025.5.21
     - typing-extensions >=4.0
     - zarr >=2.16.0,<3.0
 
